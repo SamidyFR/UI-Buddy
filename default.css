@@ -9,8 +9,8 @@ body {
 }
 
 #banner {
-	width: 250;
-	height: 15;
+	width: 250px;
+	height: 15px;
 	font-family: "Helvetica", "Courier New", monospace;
 	font-size: 16px;
 	text-align: center;
@@ -20,8 +20,8 @@ body {
 	padding: 15px;
 	margin: 0 auto;
 	position: absolute;
-	top: 150;
-	left: -50;
+	top: 150px;
+	left: -50px;
 	transform-origin: 0 0;
 	transform: rotate(-45deg);
 	text-decoration: none;

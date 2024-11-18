@@ -26,6 +26,7 @@ body {
 	transform: rotate(-45deg);
 	text-decoration: none;
 }
+/* The banner seems to not be working right now, even though it worked standalonely. Will push garbage commits to hopefully fix. */
 
 #page {
 	background-color: white;

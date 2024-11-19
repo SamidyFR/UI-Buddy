@@ -7,9 +7,16 @@
 		<link rel="stylesheet" type="text/css" href="default.css">
 	</head>
 	<body>
+	    <script>
+		function mode() {
+			const element = document.body;
+			element.classList.toggle("dark-mode");
+			const img = document.getElementById("logo");
+			img.classList.toggle("dark-mode");
+		}
+		</script>
 		<div id="logo">
 			<a href="https://ui-buddy.github.io/UI-Buddy/">
-				<img src="custombgsite.png"></img>
 			</a>
 		</div>
 		<div>
@@ -39,7 +46,7 @@
 				UI-Buddy is a simple program which is used primarily to create user interfaces. It runs on Python, with no external libraries.
 			</p>
 			<hr></hr>
-			<p id="medium">
+			<p id="header">
 				UI-Buddy Features:
 			</p>
 			<p id="medium">
@@ -91,9 +98,12 @@
 		</div>
 		<div id="footer">
 			<p>Credits: </p>
-			<p>SvrBrnDmg- Creator and dev of UI-Buddy </p>
+			<p><a href="mailto:svrbrndmg@proton.me" style="text-decoration: none; color: #434c56;">SvrBrnDmg</a> - Creator, dev and website creator of UI-Buddy </p>
 
-			<p>Samidy - Original website creator, playtester</p>
+			<p><a href="mailto:contact@samidy.com" style="text-decoration: none; color: #434c56;">Samidy</a> - Original website creator, playtester</p>
+		</div>
+		<div>
+			<button onclick="mode()" id="modeswitch"></button>
 		</div>
 	</body>
 </html>

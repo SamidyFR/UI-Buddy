@@ -74,7 +74,7 @@ body {
 
 #itemflip {
 	border-width: 2px;
-	border-radius: 0.5em 0.5em 0em 0em;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
 	border-style: solid solid solid solid;
 	border-color: gray;
 	font-family: "Helvetica", "Courier New", monospace;

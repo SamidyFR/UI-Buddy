@@ -1,11 +1,27 @@
 body {
 	background-color: white;
+	color: black;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
 }
 
 #logo {
+	width: 375px;
+	height: 125px;
+	background-image: url("custombgsite.png");
 	text-align: center;
-	margin: 0;
 	padding: 0;
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dark-mode #logo {
+	background-image: url("custombgsitedark.png");
 }
 
 #banner {
@@ -14,9 +30,14 @@ body {
 	font-family: "Helvetica", "Courier New", monospace;
 	font-size: 16px;
 	text-align: center;
-	background-color: white;
 	color: white;
-	background-color: SlateGrey;
+	background: repeating-linear-gradient(
+		45deg,
+		SlateGrey,
+		SlateGrey 10px,
+		#434c56 10px,
+		#434c56 20px
+	);
 	padding: 15px;
 	margin: 0 auto;
 	position: absolute;
@@ -26,7 +47,17 @@ body {
 	transform: rotate(-45deg);
 	text-decoration: none;
 }
-/* The banner seems to not be working right now, even though it worked standalonely. Will push garbage commits to hopefully fix. */
+
+.dark-mode #banner {
+	background: repeating-linear-gradient(
+		45deg,
+		#e2e5e9,
+		#e2e5e9 10px,
+		#a9b2bc 10px,
+		#a9b2bc 20px
+	);
+	color: black;
+}
 
 #page {
 	background-color: white;
@@ -44,9 +75,15 @@ body {
 	padding: 5px;
 }
 
+.dark-mode #page {
+	box-shadow: inset 0 55px 25px -25px #262626, 0 5px 10px #3f3f3f;
+	background-color: black;
+}
+
 #nav ul {
 	list-style-type: none;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 45px;
 	padding: 0;
 }
 
@@ -69,7 +106,17 @@ body {
 
 #item:hover {
 	color: white;
-	background-color: SlateGray;
+	background-color: SlateGrey;
+}
+
+.dark-mode #item {
+	background-color: black;
+	color: SlateGrey;
+}
+
+.dark-mode #item:hover {
+	background-color: white;
+	color: SlateGrey
 }
 
 #itemflip {
@@ -90,13 +137,38 @@ body {
 	background-color: SlateGray;
 }
 
+.dark-mode #itemflip {
+	background-color: black;
+	color: SlateGrey;
+}
+
+.dark-mode #itemflip:hover {
+	background-color: white;
+	color: SlateGrey
+}
+
+#modeswitch {
+	width: 80px;
+	height: 80px;
+	border: none;
+	background-image: url("moon.png");
+	padding: 5px;
+	position: fixed;
+	top: 865px;
+	right: 10px;
+}
+
+.dark-mode #modeswitch {
+	background-image: url("sun.png");
+}
+
 #header {
 	font-family: "Helvetica", "Courier New", monospace;
 	font-size: 32px;
 	color: SlateGrey;
 	text-align: justify;
 	padding: 3px;
-	margin-top: 45px;
+	margin-top: 2px;
 	margin-left: 5px;
 	margin-bottom: 2px;
 }
@@ -129,7 +201,6 @@ hr {
 	color: #838c96;
 	text-align: left;
 	vertical-align: middle;
-	box-shadow: 0 5px 10px silver;
 	display: inline;
 	padding: 10px;
 	margin: 0 auto;

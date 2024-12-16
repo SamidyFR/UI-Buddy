@@ -156,10 +156,15 @@ body {
 	position: fixed;
 	top: 865px;
 	right: 10px;
+	cursor: default;
 }
 
 .dark-mode #modeswitch {
 	background-image: url("sun.png");
+}
+
+#modeswitch:hover {
+	cursor: pointer;
 }
 
 #header {

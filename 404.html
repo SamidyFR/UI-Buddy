@@ -8,13 +8,21 @@
 	</head>
 	<body>
 	    <script>
+		let normal = "not_found.png";
+		let dark = "not_founddark.png";
+		let current = normal;
 		function mode() {
+			if (current = normal) {
+				current = dark;
+			} else if (current = dark) {
+				current = normal;
+			}
 			const element = document.body;
 			element.classList.toggle("dark-mode");
 			const img = document.getElementById("logo");
 			img.classList.toggle("dark-mode");
 			const imgtwo = document.getElementById("notfound");
-			imgtwo.classList.toggle("dark-mode");
+			imgtwo.src = current;
 		}
 		</script>
 		<div id="logo">

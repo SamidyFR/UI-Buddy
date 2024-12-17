@@ -168,8 +168,8 @@ body {
 }
 
 #notfound {
-	width: 485;
-	height: 170;
+	display: block;
+	float: left;
 	background-image: url("not_found.png");
 }
 

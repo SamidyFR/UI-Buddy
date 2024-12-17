@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
-    <link href="/not_found.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <h1>Not Found, Sadly</h1>
-    <p>Couldnt Find What you Were Looking for</p>
-    <button> <a href="https://ui-buddy.github.io/UI-Buddy/"> Go Back Home </a> </button>
-  </body>
+	<head>
+		<meta name="UI-Buddy Website">
+		<title>UI-Buddy - The Most Mediocre Menu Maker!</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="default.css">
+	</head>
+	<body>
+	    <script>
+		function mode() {
+			const element = document.body;
+			element.classList.toggle("dark-mode");
+			const img = document.getElementById("logo");
+			img.classList.toggle("dark-mode");
+		}
+		</script>
+		<div id="logo">
+		</div>
+		<div>
+			<a href="https://github.com/svrbrndmg/UI-Buddy/releases/latest" id="banner">Latest version: 0.5</a>
+		</div>
+		<div id="page">
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="https://ui-buddy.github.io/UI-Buddy/" id="item">About</a>
+					</li>
+					<li>
+						<a href="https://github.com/svrbrndmg/UI-Buddy/" id="item">Downloads</a>
+					</li>
+					<li>
+						<a href="https://ui-buddy.github.io/UI-Buddy/uibuddyfaq.html" id="item">FAQ</a>
+					</li>
+					<li>
+						<a href="https://discord.com/invite/pmNQwVbD" id="item">Discord</a>
+					</li>
+				</ul>
+			</div>
+      <p id="imgpara">
+        <img src="not_found.png"></img>
+      </p>
+      <hr></hr>
+      <p id="para"">We couldn't find what you were looking for. Click the button below to go back to the main page.</p>
+      <a href="https://ui-buddy.github.io/UI-Buddy/" id="item">MAIN PAGE</a>
+      <br></br>
+		</div>
+		<div id="footer">
+			<p>Credits: </p>
+			<p><a href="mailto:svrbrndmg@proton.me" style="text-decoration: none; color: #434c56;">SvrBrnDmg</a> - Creator, dev and website creator of UI-Buddy </p>
+
+			<p><a href="mailto:contact@samidy.com" style="text-decoration: none; color: #434c56;">Samidy</a> - Original website creator, playtester</p>
+		</div>
+		<div>
+			<button onclick="mode()" id="modeswitch"></button>
+		</div>
+	</body>
 </html>

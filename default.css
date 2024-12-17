@@ -167,6 +167,14 @@ body {
 	cursor: pointer;
 }
 
+#notfound {
+	background-image: url("not_found.png");
+}
+
+.dark-mode #notfound {
+	background-image: url("not_founddark.png");
+}
+
 #header {
 	font-family: "Helvetica", "Courier New", monospace;
 	font-size: 32px;

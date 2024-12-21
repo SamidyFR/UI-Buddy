@@ -154,7 +154,7 @@ body {
 	background-image: url("moon.png");
 	padding: 5px;
 	position: fixed;
-	top: 865px;
+	bottom: 10px;
 	right: 10px;
 	cursor: default;
 }

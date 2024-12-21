@@ -9,6 +9,10 @@
 	<body>
 	    <script>
 		function mode() {
+			let mobile = false;
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				mobile = true;
+			}
 			const element = document.body;
 			element.classList.toggle("dark-mode");
 			const img = document.getElementById("logo");
